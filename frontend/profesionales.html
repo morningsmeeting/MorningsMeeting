@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Profesionales - MorningsMeeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zona Profesional</h1>
+    </header>
+
+    <section id="loginSection">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="loginBtn">Entrar</button>
+        <p id="loginMsg"></p>
+    </section>
+
+    <section id="publicarSection" style="display:none;">
+        <h2>Publicar noticia</h2>
+        <input type="text" id="titulo" placeholder="Título de la noticia">
+        <input type="text" id="url" placeholder="URL de la noticia">
+        <button id="publicarBtn">Publicar</button>
+        <p id="publicarMsg"></p>
+        <button id="logoutBtn">Cerrar sesión</button>
+    </section>
+
+    <script src="profesionales.js"></script>
+</body>
+</html>

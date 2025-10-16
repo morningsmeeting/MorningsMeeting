@@ -1,7 +1,73 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9fafc;
-  color: #222;
-  text-align: center;
-  padding: 50px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f6fa;
+    color: #333;
 }
+
+header {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+header button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00b894;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.card a {
+    color: #0984e3;
+    text-decoration: none;
+}
+
+.card .tipo {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.tipo.oficial { background-color: #00b894; color: #fff; }
+.tipo.agregada { background-color: #fdcb6e; color: #333; }

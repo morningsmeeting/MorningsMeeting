@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MorningsMeeting</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>MorningsMeeting - Noticias Financieras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>MorningsMeeting</h1>
-  <p>Tu centro automatizado de noticias financieras verificadas.</p>
-  <script src="script.js"></script>
+    <header>
+        <h1>MorningsMeeting</h1>
+        <input type="text" id="activoInput" placeholder="Busca cualquier activo (acción, cripto, divisa...)">
+        <button id="buscarBtn">Buscar</button>
+    </header>
+
+    <main>
+        <section id="topNoticias">
+            <h2>Noticias más relevantes del día</h2>
+            <div id="topNoticiasContainer" class="cardsContainer"></div>
+        </section>
+
+        <section id="resultados">
+            <h2>Noticias del activo</h2>
+            <div id="noticiasContainer" class="cardsContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MorningsMeeting - Noticias financieras automatizadas</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
